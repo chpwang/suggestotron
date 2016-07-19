@@ -7,6 +7,7 @@ class TopicsController < ApplicationController
     @topics = Topic.all.sort_by { |item| item.votes.count }.reverse
   end
 
+
   # GET /topics/1
   # GET /topics/1.json
   def show
